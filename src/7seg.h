@@ -12,13 +12,41 @@
 #include <stdint.h>
 
 // Pins on the display to pins on Arduino
+#ifndef PIN1
 #define PIN1 33
+#endif
+
+#ifndef PIN2
 #define PIN2 25
+#endif
+
+#ifndef PIN3
 #define PIN3 26
+#endif
+
+#ifndef PIN4
 #define PIN4 27
+#endif
+
+#ifndef PIN5
 #define PIN5 14
+#endif
+
+#ifndef PIN6
 #define PIN6 12
+#endif
+
+#ifndef PIN7
 #define PIN7 13
+#endif
+
+pinMode(PIN1, INPUT);
+pinMode(PIN2, INPUT);
+pinMode(PIN3, INPUT);
+pinMode(PIN4, INPUT);
+pinMode(PIN5, INPUT);
+pinMode(PIN6, INPUT);
+pinMode(PIN7, INPUT);
 
 typedef struct {
     uint8_t high_pin;
